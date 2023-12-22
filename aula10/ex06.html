@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá NOOB</title>
+    <style>
+        div#area {
+            font: normal 20px Arial;  
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <div id="area">
+    Interaja..
+ </div>
+
+ <script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', clicar)
+    
+    function clicar() {
+        a.innerHTML = 'Go go Boyola' 
+        /*só vai ser exuctado quando chamar o clickar*/
+    }
+
+    function entrar() {
+        a.innerText = 'Bonde da theCybers Capturando Bandeiras'
+        a.style.background = 'red'
+    }
+    function sair() {
+        a.innerText = 'No Contexto da CTF admin vou te explicar'
+        a.style.background = 'green'
+    }
+ </script>
+</body>
+</html>
